@@ -46,7 +46,7 @@ export default function Contato() {
         <a href="https://www.linkedin.com/in/gustavo-lira-criado-894111143/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-emerald-400 transition" aria-label="LinkedIn">
           <FaLinkedin size={28} />
         </a>
-        <a href="https://github.com/gustavocriado" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-emerald-400 transition" aria-label="GitHub">
+        <a href="https://github.com/GustavoCriado01" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-emerald-400 transition" aria-label="GitHub">
           <FaGithub size={28} />
         </a>
       </motion.div>
