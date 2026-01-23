@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-// ✅ Ajuste para o seu domínio real (importante p/ OG e canonical)
+// ✅ SEMPRE usar WWW (canonical + og:url + og:image no mesmo host)
 const SITE_URL = "https://www.gustavoliracriado.com.br";
 const BRAND = "Gustavo Lira Criado";
 const OG_IMAGE_ABS = `${SITE_URL}/og-image.png`;
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   applicationName: `${BRAND} — Desenvolvedor Freelancer`,
 
   alternates: {
-    canonical: SITE_URL,
+    canonical: SITE_URL, // ✅ www
   },
 
   robots: {
@@ -48,22 +48,20 @@ export const metadata: Metadata = {
     },
   },
 
-  // ✅ Ícones corretos: devem estar em /public
   icons: {
     icon: "/favicon.ico",
     apple: "/apple-touch-icon.png",
   },
 
-  // ✅ Open Graph (WhatsApp/LinkedIn)
   openGraph: {
     title: `${BRAND} — Desenvolvedor Freelancer`,
     description:
       "Desenvolvimento de software com qualidade: .NET/C#, APIs, integrações, automação de processos e LGPD.",
-    url: SITE_URL,
+    url: SITE_URL, // ✅ www
     siteName: BRAND,
     images: [
       {
-        url: OG_IMAGE_ABS, // ✅ URL absoluta
+        url: OG_IMAGE_ABS, // ✅ www + absoluto
         width: 1200,
         height: 630,
         alt: `${BRAND} — Desenvolvedor Freelancer`,
@@ -73,21 +71,18 @@ export const metadata: Metadata = {
     type: "website",
   },
 
-  // ✅ Twitter Card
   twitter: {
     card: "summary_large_image",
     title: `${BRAND} — Desenvolvedor Freelancer`,
     description:
       "Freelancer em desenvolvimento de software: .NET/C#, APIs, integrações, automação e LGPD.",
-    images: [OG_IMAGE_ABS],
+    images: [OG_IMAGE_ABS], // ✅ www
   },
 
-  // ✅ (Opcional) Ajuda com “entidade” e consistência
   authors: [{ name: BRAND }],
   creator: BRAND,
   publisher: BRAND,
 
-  // ✅ Keywords (não é o fator #1 do Google hoje, mas ok incluir)
   keywords: [
     "Gustavo Lira Criado",
     "desenvolvedor freelancer",
@@ -106,7 +101,11 @@ export const metadata: Metadata = {
   ],
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="pt-BR" className="dark">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
