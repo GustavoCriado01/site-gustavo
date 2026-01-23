@@ -61,7 +61,9 @@ export const metadata: Metadata = {
     siteName: BRAND,
     images: [
       {
-        url: OG_IMAGE_ABS, // ✅ www + absoluto
+        url: OG_IMAGE_ABS,
+        secureUrl: OG_IMAGE_ABS,
+        type: "image/png",
         width: 1200,
         height: 630,
         alt: `${BRAND} — Desenvolvedor Freelancer`,
