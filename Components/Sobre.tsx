@@ -32,7 +32,7 @@ export default function Sobre() {
           Sou <strong>desenvolvedor freelancer</strong> com mais de 9 anos de experiência em 
   <strong> tecnologia e desenvolvimento de software</strong>.  
   Atuo em projetos que vão desde <strong>sites institucionais</strong> até 
-  <strong>aplicações complexas em Next.js, React e .NET</strong>.  
+  <strong> aplicações complexas em Next.js, React e .NET</strong>.  
   Minha missão é entregar soluções digitais com qualidade, segurança e escalabilidade, 
   sempre alinhadas às necessidades do cliente.
         </motion.p>
