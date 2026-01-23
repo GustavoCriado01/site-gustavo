@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 // ✅ Ajuste para o seu domínio real (importante p/ OG e canonical)
-const SITE_URL = "https://gustavoliracriado.com.br"; // troque se for outro
+const SITE_URL = "https://www.gustavoliracriado.com.br";
 const BRAND = "Gustavo Lira Criado";
 const OG_IMAGE_ABS = `${SITE_URL}/og-image.png`;
 
